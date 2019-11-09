@@ -1,0 +1,125 @@
+* {box-sizing:border-box;}
+
+.background-game {
+  margin:0;
+  background-image: url(images/background-start.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: white;
+  height:100vh;
+}
+
+/*START SCREEN*/
+.startScreen {
+  padding: 0;
+  margin: auto;
+  display: block;
+  width: 800px;
+  height: 500px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.instructions {
+  text-align: center;
+  width: 40em;
+  margin: 2em auto 2em;
+}
+
+.instructions p {
+  font-family: 'FR73 Pixel W00 Regular', sans-serif;
+  font-size: 19px;
+  margin: 2em auto;
+}
+
+.instructions img {
+  height: 10em;
+}
+
+.button {
+  font-family: 'FR73 Pixel W00 Regular', sans-serif;
+  color:#EB5E69;
+  font-size: 24px;
+  background: white;
+  padding: 0.3rem 3rem;
+  border: 3px solid #EB5E69;
+  box-shadow: 0 0 0 #EB5E69;
+  transition: all 0.2s;
+
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button:hover {
+  box-shadow: 0.4rem 0.4rem 0 #EB5E69;
+  transform: translate(-0.4rem, -0.4rem);
+}
+
+.button:active {
+  box-shadow: 0 0 0 #EB5E69;
+  transform: translate(0, 0);
+}
+
+.button :before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 12px;
+  left: -14px;
+  width: calc(100% + 6px);
+  height: calc(100% + 6px);
+  background-color: #f9d159;
+  transition: all .3s ease;
+}
+
+/*CANVAS*/
+#game-board {
+  width: 100%;
+  margin: 0 auto;
+}
+
+canvas {
+  padding: 0;
+  margin: auto;
+  display: block;
+  width: 800px;
+  height: 500px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+}
+
+/*GAME OVER*/
+.gameOver {
+  padding: 0;
+  margin: auto;
+  display: none;
+  width: 800px;
+  height: 500px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.container {
+  text-align: center;
+  width: 40em;
+  margin: 2em auto 2em;
+}
+
+.container img {
+  height: 18em;
+  margin-bottom: 4em;
+}

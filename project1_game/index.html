@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Feed Ali, the vegetarian !</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts/FR73 Pixel/index.css" />
+  </head>
+  <body class="background-game">
+    <div class="startScreen" id="remove-screen">
+      <div class="instructions">
+        <img src="images/character-home.png" alt="Character"/>
+        <p>En utilisant les flêches ↑ et ↓ de ton clavier, aides Ali la végétarienne à se nourrir. Attention, tu dois éviter les aliments qu'elle ne consomme pas !</p>
+      </div>
+      <button class="button" id="start-button">start game</button>
+    </div>
+
+    <div class="gameOver" id="game-over">
+      <div class="container">
+        <img src="images/character-over.png" alt="Character"/>
+        <button class="button" id="over-button">try again</button>
+      </div>
+    </div>
+    
+    <div id="game-board">
+      <canvas width="800" height="500"></canvas>
+    </div>
+
+    <script src="js/character.js"></script>
+    <script src="js/obstacle.js"></script>
+    <script src="js/point.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
