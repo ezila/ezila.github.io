@@ -1,4 +1,4 @@
-var tabObstacles = ['images/poisson.png', 'images/steak.png', 'images/poulet.png'];
+var tabObstacles = ['images/crevette.png', 'images/steak.png', 'images/poulet.png'];
 
 function random(from, to) {
   return Math.floor(from + Math.random()*(to - from));
