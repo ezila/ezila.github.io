@@ -1,0 +1,182 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {font-family: 'Roboto Mono', monospace; color: white;}
+
+h1 {font-family: 'DM Serif Display', serif; font-size: 3em; font-weight: 100; color: #101010; line-height: 1em;}
+
+.button {
+  text-decoration: none;
+  background-color: #282828;
+  padding: 1em 2em;
+  margin: 0em;
+}
+
+.button:hover {
+  text-decoration: none;
+  background-color: #101010;
+  padding: 1em 2em;
+  margin: 0em;
+}
+
+.navbar {
+  position: absolute;
+  z-index: 9999;
+  color: white;
+  font-size: 0.9em;
+  display: flex;
+  width: 100%;
+  padding: 1.8em 3em;
+}
+
+.navbar .menu {
+  margin-left: auto;
+}
+
+a {
+  color: #CCCCCC;
+  text-decoration: none;
+  margin-left: 0.6em;
+}
+a:hover, a:active {
+  color: white;
+  opacity: 1;
+}
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+  background-color: #CCCCCC;
+}
+
+.about{
+  width: 100%;
+	height: 100vh;
+  background: linear-gradient(-45deg, #EE7752, #D9308A, #00ABE9, #23D5AB);
+  background-size: 300% 300%;
+  animation: Gradient 15s ease infinite;
+  position: relative;
+}
+
+@keyframes Gradient {
+	0% {background-position: 0% 50%}
+	50% {background-position: 100% 50%}
+	100% {background-position: 0% 50%}
+}
+
+.slide {padding-left: 6em; padding-right: 6em;}
+.fp-tableCell {display: flex; align-items: center;}
+
+.work {background-color: white;}
+
+.project-text {padding-right: 3em; width: 50%;}
+.project-text span {color: #CCCCCC;}
+.project-text p {margin-bottom: 4em; padding-right: 4em; color: #868181;}
+
+hr {
+  height: 2px;
+  color: #101010;
+  background-color: #101010;
+  width: 12%;
+  border: none;
+  margin: 1em 0em 1.6em 0em;
+}
+
+.slider {
+  width: 50%;
+  height: 30em;
+  position: relative;
+}
+
+.slide-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.slide1 {
+  background: url(./images/barycentre1.jpg)no-repeat center;
+  background-size: cover;
+  animation:fade 15s infinite;
+  -webkit-animation:fade 15s infinite;
+} 
+.slide2 {
+  background: url(./images/barycentre2.jpg)no-repeat center;
+  background-size: cover;
+  animation:fade 15s infinite;
+  -webkit-animation:fade2 15s infinite;
+}
+.slide3 {
+  background: url(./images/barycentre3.jpg)no-repeat center;
+  background-size: cover;
+  animation:fade 15s infinite;
+  -webkit-animation:fade3 15s infinite;
+}
+
+.slide4 {
+  background: url(./images/feedali1.jpg)no-repeat center;
+  background-size: cover;
+  animation:fade 15s infinite;
+  -webkit-animation:fade 15s infinite;
+}
+.slide5 {
+  background: url(./images/feedali2.jpg)no-repeat center;
+  background-size: cover;
+  animation:fade 15s infinite;
+  -webkit-animation:fade2 15s infinite;
+}
+.slide6 {
+  background: url(./images/feedali3.jpg)no-repeat center;
+  background-size: cover;
+  animation:fade 15s infinite;
+  -webkit-animation:fade3 15s infinite;
+}
+
+.slide7 {
+  background: url(./images/euroconstruct1.jpg)no-repeat center;
+  background-size: cover;
+  animation:fade4 15s infinite;
+  -webkit-animation:fade4 15s infinite;
+}
+.slide8 {
+  background: url(./images/euroconstruct2.jpg)no-repeat center;
+  background-size: cover;
+  animation:fade4 15s infinite;
+  -webkit-animation:fade5 15s infinite;
+}
+.slide9 {
+  background: url(./images/euroconstruct3.jpg)no-repeat center;
+  background-size: cover;
+  animation:fade4 15s infinite;
+  -webkit-animation:fade6 15s infinite;
+}
+.slide10 {
+  background: url(./images/euroconstruct4.jpg)no-repeat center;
+  background-size: cover;
+  animation:fade4 15s infinite;
+  -webkit-animation:fade7 15s infinite;
+}
+
+@keyframes fade {0% {opacity:1} 33.333% {opacity: 0} 66.666% {opacity: 0} 100% {opacity: 1}}
+@keyframes fade2 {0% {opacity:0} 33.333% {opacity: 1} 66.666% {opacity: 0 } 100% {opacity: 0}}
+@keyframes fade3 {0% {opacity:0} 33.333% {opacity: 0} 66.666% {opacity: 1} 100% {opacity: 0}}
+
+@keyframes fade4 {0% {opacity:1} 25% {opacity: 0} 50% {opacity: 0} 75% {opacity: 0} 100% {opacity: 1}}
+@keyframes fade5 {0% {opacity:0} 25% {opacity: 1} 50% {opacity: 0} 75% {opacity: 0} 100% {opacity: 0}}
+@keyframes fade6 {0% {opacity:0} 25% {opacity: 0} 50% {opacity: 1} 75% {opacity: 0} 100% {opacity: 0}}
+@keyframes fade7 {0% {opacity:0} 25% {opacity: 0} 50% {opacity: 0} 75% {opacity: 1} 100% {opacity: 0}}
+
+.contact {
+  background-color: pink;
+}
+
+@media (max-width:768px) {
+  .navbar {
+    padding: 1.5em 2em;
+  }
+
+  a {
+    margin-left: 0em;
+  }
+}

@@ -1,3 +1,92 @@
-<h1>Bienvenue sur mon site web !</h1>
-<h2>Mes cheat sheets</h2>
-<a href="https://hackmd.io/7svZkY6CTkaCwuF6N6DLBA">Javascript</a>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="author" content="Alizée Jan"/>
+    <title>Alizée Jan - Designer/Web developper</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar"> 
+        <p>alizee.jan /></p>
+        <div class="menu">
+          <a href="#about">About.</a>
+          <a href="#work">Work.</a>
+          <a href="#contact">Contact.</a>
+        </div>
+      </nav>
+    </header>
+    
+    <div id="container">
+      <div class="section about">Section 1</div>
+      <div class="section work">
+        <div class="slide">
+          <div class="project-text">
+            <span>Project.1</span>
+            <h1>Barycentre</h1>
+            <hr>
+            <p>Barycentre est un projet d'application permettant de trouver le bar idéal pour se retrouver entre amis,
+            en fonction de la situation géographique de chacun. L'application récupère les coordonnées géographiques
+            de chaque personne puis calcule le barycentre pour vous proposer la zone idéale et équitable en temps de transport.
+            <br/><br/>
+            <span>App React, Node, Express, MongoDB</span><br/><span>Travail effectué : Design / Front-end / CSS</span></p>
+            <a class="button" href="http://barycentre.herokuapp.com/" target = "_blank">Voir site web /></a>
+          </div>
+          <div class="slider">
+            <div class="slide-container slide1"></div>
+            <div class="slide-container slide2"></div>
+            <div class="slide-container slide3"></div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="project-text">
+            <span>Project.2</span>
+            <h1>Feed Ali</h1>
+            <hr>
+            <p>Jeu d'arcade classique en pixel art, le but est de nourrir le personnage pour gagner le plus de points possible.
+               Attention, Ali est végétarienne alors évitez les aliments qu'elle ne consomme pas !
+            <br/><br/>
+            <span>JavaScript, Canvas, HTML, CSS</span><br/><span>Travail effectué : Design / Développement</span></p>
+            <a class="button" href="https://ezila.github.io/project1_game/" target = "_blank">Jouer au jeu /></a>
+          </div>
+          <div class="slider">
+            <div class="slide-container slide4"></div>
+            <div class="slide-container slide5"></div>
+            <div class="slide-container slide6"></div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="project-text">
+            <span>Project.3</span>
+            <h1>Euroconstruct<br/>conference Paris</h1>
+            <hr>
+            <p style="margin-bottom: 0;">Euroconstruct est une conférence qui aborde les prévisions du marché de la construction en Europe.
+               Réalisation des différents supports de communication de la conférence (programme, tote bag, stylo, invitation, kakémono, site web).
+               Gestion des fichiers d'impression et commandes imprimeur.
+            <br/><br/>
+            <span>Travail effectué : Design / Façonnage</span></p>
+          </div>
+          <div class="slider">
+            <div class="slide-container slide7"></div>
+            <div class="slide-container slide8"></div>
+            <div class="slide-container slide9"></div>
+            <div class="slide-container slide10"></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="section contact">Section 3</div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
