@@ -95,67 +95,60 @@ hr {
   height: 100%;
 }
 
-.slide1 {
-  background: url(./images/barycentre1.jpg)no-repeat center;
-  background-size: cover;
-  animation:fade 15s infinite;
-  -webkit-animation:fade 15s infinite;
-} 
-.slide2 {
-  background: url(./images/barycentre2.jpg)no-repeat center;
-  background-size: cover;
-  animation:fade 15s infinite;
-  -webkit-animation:fade2 15s infinite;
-}
-.slide3 {
-  background: url(./images/barycentre3.jpg)no-repeat center;
-  background-size: cover;
-  animation:fade 15s infinite;
-  -webkit-animation:fade3 15s infinite;
-}
+.slide1 {background: url(./images/barycentre1.jpg)no-repeat center;} 
+.slide2 {background: url(./images/barycentre2.jpg)no-repeat center;}
+.slide3 {background: url(./images/barycentre3.jpg)no-repeat center;}
 
-.slide4 {
-  background: url(./images/feedali1.jpg)no-repeat center;
-  background-size: cover;
-  animation:fade 15s infinite;
-  -webkit-animation:fade 15s infinite;
-}
-.slide5 {
-  background: url(./images/feedali2.jpg)no-repeat center;
-  background-size: cover;
-  animation:fade 15s infinite;
-  -webkit-animation:fade2 15s infinite;
-}
-.slide6 {
-  background: url(./images/feedali3.jpg)no-repeat center;
-  background-size: cover;
-  animation:fade 15s infinite;
-  -webkit-animation:fade3 15s infinite;
-}
+.slide4 {background: url(./images/feedali1.jpg)no-repeat center;}
+.slide5 {background: url(./images/feedali2.jpg)no-repeat center;}
+.slide6 {background: url(./images/feedali3.jpg)no-repeat center;}
 
 .slide7 {
   background: url(./images/euroconstruct1.jpg)no-repeat center;
-  background-size: cover;
   animation:fade4 15s infinite;
   -webkit-animation:fade4 15s infinite;
 }
 .slide8 {
   background: url(./images/euroconstruct2.jpg)no-repeat center;
-  background-size: cover;
   animation:fade4 15s infinite;
   -webkit-animation:fade5 15s infinite;
 }
 .slide9 {
   background: url(./images/euroconstruct3.jpg)no-repeat center;
-  background-size: cover;
   animation:fade4 15s infinite;
   -webkit-animation:fade6 15s infinite;
 }
 .slide10 {
   background: url(./images/euroconstruct4.jpg)no-repeat center;
-  background-size: cover;
   animation:fade4 15s infinite;
   -webkit-animation:fade7 15s infinite;
+}
+
+.slide11 {background: url(./images/plaquettes1.jpg)no-repeat center;}
+.slide12 {background: url(./images/plaquettes2.jpg)no-repeat center;}
+.slide13 {background: url(./images/plaquettes3.jpg)no-repeat center;}
+
+.slide14 {background: url(./images/webdesign1.jpg)no-repeat center;}
+.slide15 {background: url(./images/webdesign2.jpg)no-repeat center;}
+.slide16 {background: url(./images/webdesign3.jpg)no-repeat center;}
+
+.img-cover {
+  background-size: cover;
+}
+
+.slide1, .slide4, .slide11, .slide14 {
+  animation:fade 15s infinite;
+  -webkit-animation:fade 15s infinite;
+}
+
+.slide2, .slide5, .slide12, .slide15 {
+  animation:fade 15s infinite;
+  -webkit-animation:fade2 15s infinite;
+}
+
+.slide3, .slide6, .slide13, .slide16 {
+  animation:fade 15s infinite;
+  -webkit-animation:fade3 15s infinite;
 }
 
 @keyframes fade {0% {opacity:1} 33.333% {opacity: 0} 66.666% {opacity: 0} 100% {opacity: 1}}
