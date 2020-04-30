@@ -10,20 +10,41 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
   </head>
-  <body>
+  <body class="top">
+    <div class="cursor-follower pc"></div>
+    <div class="cursor pc"></div>
+
     <header>
       <nav class="navbar"> 
-        <p>alizee.jan /></p>
+        <p><a href="#home">alizee.jan /></a></p>
         <div class="menu">
-          <a href="#about">About.</a>
           <a href="#work">Work.</a>
           <a href="#contact">Contact.</a>
         </div>
-      </nav>
+      </nav> 
     </header>
     
     <div id="container">
-      <div class="section about">Section 1</div>
+      <div class="section home">
+        <div class="home-text1">
+          <div class="home-text-line font-design"><h1>Designer</h1></div>
+          <div class="home-text-base font-design"><h1>Designer</h1></div>
+        </div>
+        <div class="home-text2">
+          <div class="home-text-line font-dev"><h1>web</h1></div>
+          <div class="home-text-base font-dev"><h1>web</h1></div>
+        </div>
+        <div class="home-text3">
+          <div class="home-text-line font-dev"><h1>developer/></h1></div>
+          <div class="home-text-base font-dev"><h1>developer/></h1></div>
+        </div>
+  
+        <div class="home-image">
+          <img class="img-animation" src="./images/home-img.png">
+        </div>
+
+        <a href="#work" class="link on">work &darr;</a>
+      </div>
       <div class="section work">
         <div class="slide">
           <div class="project-text">
@@ -35,7 +56,7 @@
             de chaque personne puis calcule le barycentre pour vous proposer la zone idéale et équitable en temps de transport.
             <br/><br/>
             <span>App React, Node, Express, MongoDB</span><br/><span>Travail effectué : Design / Front-end / CSS</span></p>
-            <a class="button" href="http://barycentre.herokuapp.com/" target = "_blank">Voir site web /></a>
+            <a class="button" href="http://barycentre.herokuapp.com/" target="_blank">Voir site web /></a>
           </div>
           <div class="slider">
             <div class="slide-container img-cover slide1"></div>
@@ -53,7 +74,7 @@
                Attention, Ali est végétarienne alors évitez les aliments qu'elle ne consomme pas !
             <br/><br/>
             <span>JavaScript, Canvas, HTML, CSS</span><br/><span>Travail effectué : Design / Développement</span></p>
-            <a class="button" href="https://ezila.github.io/project1_game/" target = "_blank">Jouer au jeu /></a>
+            <a class="button" href="https://ezila.github.io/project1_game/" target="_blank">Jouer au jeu /></a>
           </div>
           <div class="slider">
             <div class="slide-container img-cover slide4"></div>
@@ -72,7 +93,7 @@
                Gestion des fichiers d'impression et commandes imprimeur.
             <br/><br/>
             <span>Travail effectué : Design / Préparation de l'événement</span></p>
-            <a class="button" href="http://barycentre.herokuapp.com/" target = "_blank">Voir plus /></a>
+            <a class="button" href="http://barycentre.herokuapp.com/" target="_blank">Voir plus /></a>
           </div>
           <div class="slider">
             <div class="slide-container img-cover slide7"></div>
@@ -91,7 +112,7 @@
                (automobile, aéronautique, santé, construction, finance, etc.)
             <br/><br/>
             <span>Travail effectué : Design / Mise en page</span></p>
-            <a class="button" href="http://barycentre.herokuapp.com/" target = "_blank">Voir plus /></a>
+            <a class="button" href="http://barycentre.herokuapp.com/" target="_blank">Voir plus /></a>
           </div>
           <div class="slider">
             <div class="slide-container img-cover slide11"></div>
@@ -110,7 +131,7 @@
                des différentes illustrations venant alimenter le propos.
             <br/><br/>
             <span>Travail effectué : Webdesign / Illustrations</span></p>
-            <a class="button" href="http://barycentre.herokuapp.com/" target = "_blank">Voir plus /></a>
+            <a class="button" href="http://barycentre.herokuapp.com/" target="_blank">Voir plus /></a>
           </div>
           <div class="slider">
             <div class="slide-container img-cover slide14"></div>
@@ -124,6 +145,9 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/cursor.js"></script>
     <script src="js/main.js"></script>
+
   </body>
 </html>

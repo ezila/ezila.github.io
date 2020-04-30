@@ -5,6 +5,6 @@ $(document).ready(function() {
     navigation: true,
     slidesNavigation: true,
     controlArrows: false,
-    anchors:['about','work','contact']
+    anchors:['home','work','contact']
   });
-  });
+});
