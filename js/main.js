@@ -4,7 +4,7 @@ $(document).ready(function() {
   $('#container').fullpage({
     navigation: true,
     slidesNavigation: true,
-    controlArrows: false,
+    controlArrows: true,
     anchors:['home','work','contact']
   });
 });
