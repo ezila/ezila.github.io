@@ -28,6 +28,8 @@ a {text-decoration: none;}
   padding: 3em 6em 0em 6em;
   justify-content: center;
 }
+@media (max-width:768px) {.navbar {padding: 1.5em 1.7em; font-size: 0.8em;}
+}
 
 .navbar .menu {
   margin-left: auto;
@@ -51,6 +53,8 @@ a {text-decoration: none;}
 #fp-nav ul li a, .fp-slidesNav ul li a {
   cursor: none;
 }
+
+@media (max-width:768px) {#fp-nav.right {right: 3px;}}
 
 /*
 
@@ -86,9 +90,16 @@ a {text-decoration: none;}
   position: absolute;
   font-size: 8vw;
 }
+@media (max-width:768px) {.home-text1 h1,.home-text2 h1,.home-text3 h1 {font-size: 12vw;}}
+
 .home-text1 h1 {top: 25%; left: 35%;}
+@media (max-width:768px) {.home-text1 h1 {top: 38%; left:28%;}}
+
 .home-text2 h1 {top: 40%; left: 28%;}
+@media (max-width:768px) {.home-text2 h1 {top: 46%; left:20%;}}
+
 .home-text3 h1 {top: 55%; left: 20%;}
+@media (max-width:768px) {.home-text3 h1 {top: 55%; left: 8%;}}
 
 .text-line h1 {
   min-height: 150px;
@@ -166,8 +177,13 @@ a {text-decoration: none;}
 */
 
 .slide {padding-left: 6em; padding-right: 6em;}
+@media (max-width:768px) {.slide {padding-left: 2em; padding-right: 2em;}}
+
 .fp-tableCell {display: flex; align-items: center;}
+@media (max-width:768px) {.fp-tableCell {flex-direction: column; justify-content: center;}}
+
 .fp-controlArrow {top:90%; margin: 0em 12em;}
+@media (max-width:768px) {.fp-controlArrow {top:94%; margin: 0em 1.2em;}}
 
 .fp-controlArrow.fp-prev {text-align: left;}
 .fp-controlArrow.fp-next {text-align: right;}
@@ -180,12 +196,15 @@ a {text-decoration: none;}
   width: 8em;
   cursor: none;
 }
+@media (max-width:768px) {.fp-controlArrow.fp-prev, .fp-controlArrow.fp-next {font-size: 0.8em;}}
 
 .fp-controlArrow.fp-prev:hover, .fp-controlArrow.fp-next:hover {color: rgba(16,16,16,0.5);}
 
 .work {background-color: white;}
 
 .project-text {padding-right: 3em; width: 50%;}
+@media (max-width:768px) {.project-text {padding-right: 0; width: 100%;}}
+
 .project-text span {color: #CCCCCC;}
 .project-text h1 {
   font-family: 'DM Serif Display', serif;
@@ -195,7 +214,10 @@ a {text-decoration: none;}
   line-height: 1em;
   margin-top: 0.2em;
 }
+@media (max-width:768px) {.project-text h1 {font-size: 1.5em;}}
+
 .project-text p {margin-bottom: 4em; padding-right: 4em; color: #868181;}
+@media (max-width:768px) {.project-text p {margin-bottom: 2em;} .project-text p, .font-size-mob {font-size: 0.7em; padding-right: 0;}}
 
 hr {
   height: 2px;
@@ -205,12 +227,14 @@ hr {
   border: none;
   margin: 1.2em 0em 1.2em 0em;
 }
+@media (max-width:768px) {hr {margin: 0.5em 0em 0.5em 0em;}}
 
 .slider {
   width: 50%;
   height: 30em;
   position: relative;
 }
+@media (max-width:768px) {.slider {width: 100%; height: 15em; margin-top: 2em;}}
 
 .slide-container {
   position: absolute;
@@ -307,10 +331,15 @@ hr {
   position: absolute;
   font-size: 8vw;
 }
-.contact-text1 h1{top: 38%; left: 30%;}
-.contact-text2 h1{top: 50%; left: 52%;}
+@media (max-width:768px) {.contact-text1 h1,.contact-text2 h1 {font-size: 14vw;}}
 
-.contact-image{
+.contact-text1 h1{top: 38%; left: 30%;}
+@media (max-width:768px) {.contact-text1 h1 {top: 25%; left: 18%;}}
+
+.contact-text2 h1{top: 50%; left: 52%;}
+@media (max-width:768px) {.contact-text2 h1 {top: 36%; left: 50%;}}
+
+.contact-image {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -320,6 +349,7 @@ hr {
   height: auto;
   z-index: 5;
 }
+@media (max-width:768px) {.contact-image {top: 35%}}
 
 .contact-image img{
   width: 100%;
@@ -337,11 +367,13 @@ hr {
   color: white;
   padding: 0em 18em;
 }
+@media (max-width:768px) {.footer {padding: 0em 2em; flex-direction: column; top: 65%; text-align: center; font-size: 0.8em;}}
 
 .footer a {
   text-decoration: none;
   color: white;
 }
+@media (max-width:768px) {.footer a {margin-top: 1em;}}
 
 .footer a:hover {
   color: rgba(255, 255, 255, 0.5);
@@ -357,48 +389,50 @@ hr {
   ####   ####  #    #  ####   ####  #    #
 
 */
-
-.cursor {
-  position: absolute;
-  background-color: white;
-  width: 6px;
-  height: 6px;
-  border-radius: 100%;
-  z-index: 1;
-  transition: 0.3s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform, 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity;
-  user-select: none;
-  pointer-events: none;
-  z-index: 10000;
-  transform: scale(1);
-}
-.cursor.active {
-  background-color: white;
-  transform: scale(2);
-  opacity: 1;
-}
-.cursor.hovered {
-  opacity: 1;
-}
-
-.cursor-follower {
-  position: absolute;
-  background-color: rgba(232, 109, 179, 0.7);
-  width: 20px;
-  height: 20px;
-  border-radius: 100%;
-  z-index: 1;
-  transition: 0.6s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform, 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity;
-  user-select: none;
-  pointer-events: none;
-  z-index: 10000;
-  transform: translate(5px, 5px);
-}
-.cursor-follower.active {
-  opacity: 0.9;
-  transform: scale(3);
-}
-.cursor-follower.hovered {
-  opacity: 0.65;
+@media (min-width:768px) {
+  .cursor {
+    position: absolute;
+    background-color: white;
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    z-index: 1;
+    transition: 0.3s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform, 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity;
+    user-select: none;
+    pointer-events: none;
+    z-index: 10000;
+    transform: scale(1);
+  }
+  
+  .cursor.active {
+    background-color: white;
+    transform: scale(2);
+    opacity: 1;
+  }
+  .cursor.hovered {
+    opacity: 1;
+  }
+  
+  .cursor-follower {
+    position: absolute;
+    background-color: rgba(232, 109, 179, 0.7);
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    z-index: 1;
+    transition: 0.6s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform, 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity;
+    user-select: none;
+    pointer-events: none;
+    z-index: 10000;
+    transform: translate(5px, 5px);
+  }
+  .cursor-follower.active {
+    opacity: 0.9;
+    transform: scale(3);
+  }
+  .cursor-follower.hovered {
+    opacity: 0.65;
+  }
 }
 
 /*
@@ -420,6 +454,8 @@ hr {
   margin: 0em;
   cursor: none;
 }
+@media (max-width:768px) {.button {font-size: 0.7em; padding: 0.8em 1.2em;}}
+
 .button::before {
 	content: '';
 	position: absolute;
@@ -465,13 +501,3 @@ hr {
 #    # ######  ####  #       ####  #    #  ####  #   ##   ######
 
 */
-
-@media (max-width:768px) {
-  .navbar {
-    padding: 1.5em 2em;
-  }
-
-  a {
-    margin-left: 0em;
-  }
-}
